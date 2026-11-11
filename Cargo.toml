@@ -1,0 +1,26 @@
+[package]
+name = "git-smart-rust"
+version = "0.1.0"
+edition = "2024"
+description = "Smarter git workflow commands: smart-pull, smart-merge and smart-log"
+license = "MIT"
+
+[lib]
+name = "git_smart"
+path = "src/lib.rs"
+
+[[bin]]
+name = "git-smart-pull"
+path = "src/bin/git-smart-pull.rs"
+
+[[bin]]
+name = "git-smart-merge"
+path = "src/bin/git-smart-merge.rs"
+
+[[bin]]
+name = "git-smart-log"
+path = "src/bin/git-smart-log.rs"
+
+[profile.release]
+lto = true
+strip = true
